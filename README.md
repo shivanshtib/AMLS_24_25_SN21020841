@@ -59,13 +59,16 @@ Outputs the confusion matrix (for Task A),training and validation loss/accuracy 
 ## How to Use
 ### Dependencies
 You will need to have the following packages installed in your system:  
-`torch  
+torch  
 torchvision  
 medmnist  
 matplotlib  
 pandas  
 scikit-learn  
-seaborn`
+seaborn  
+
+To install these you can run  
+`pip install torch torchvision medmnist matplotlib pandas scikit-learn seaborn`
 ### main.py
 You will only need to run the `main.py` file in the terminal.  
 It will run some functions to prepare the datasets then display a menu. This is in a continuous loop and you will need to manually exit by entering the appropriate option.

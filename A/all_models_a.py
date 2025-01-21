@@ -3,8 +3,8 @@ import torch.nn.functional as F
 from torchvision import models
 
 """
-        You can only select Model 4,5,6,9 to train
-        This is because their output is one logit which is compatible with BCEwithlogitsloss function.
+        You can only select Model 4,5,6,9 to train in task_a_train.py
+        This is because their output is one logit which is compatible with BCEWithLogitsLoss function.
         The other Models have two logit output which I used CrossEntropyLoss for. 
         But they performed worse so I chose one logit output in the end.
         Model 9 is the final model.
@@ -268,6 +268,11 @@ class BreastCancerClassifier3(nn.Module):
         x = self.dropout2(x)  # Apply dropout after FC1
         x = self.fc2(x)  # Final output
         return x
+    
+"""
+        I added the ResNet models to check their performance 
+        I have commented it out because it shows some warning messages
+"""
 
 # # ResNet18
 # class ResNet18Classifier(nn.Module):
